@@ -8,9 +8,6 @@ smtp_port = 587
 smtp_toaddrs = [os.environ.get("SMTP_TO")]
 smtp_from = os.environ.get("SMTP_USERNAME"
 
-# Slack WebHook for notification
-slack_webhook_url = ""
-
 # Vinted URL: change the TLD according to your country (.fr, .es, etc.)
 vinted_url = "https://www.vinted.fr"
 
