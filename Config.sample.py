@@ -30,3 +30,4 @@ queries = [
         'brand_ids' : '',
         'order': 'newest_first',
     },
+]
