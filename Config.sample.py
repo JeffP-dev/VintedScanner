@@ -1,18 +1,18 @@
 # SMTP Settings for e-mail notification
-smtp_username = ""
-smtp_psw = ""
-smtp_server = ""
-smtp_toaddrs = ["User <example@example.com>"]
+import os
+
+smtp_username = os.environ.get("SMTP_USERNAME")
+smtp_psw = os.environ.get("SMTP_PSW")
+smtp_server = "mail.zaclys.net"
+smtp_port = 587
+smtp_toaddrs = [os.environ.get("SMTP_TO")]
+smtp_from = os.environ.get("SMTP_USERNAME"
 
 # Slack WebHook for notification
 slack_webhook_url = ""
 
-# Telegram Token and ChatID for notification
-telegram_bot_token = ""
-telegram_chat_id = ""
-
 # Vinted URL: change the TLD according to your country (.fr, .es, etc.)
-vinted_url = "https://www.vinted.it"
+vinted_url = "https://www.vinted.fr"
 
 # Vinted queries for research
 # "page", "per_page" and "order" you may not edit them
@@ -25,26 +25,8 @@ queries = [
     {
         'page': '1',
         'per_page': '96',
-        'search_text': '',
-        'catalog_ids': '',
-        'brand_ids' : '417',
-        'order': 'newest_first',
-    },
-    {
-        'page': '1',
-        'per_page': '96',
-        'search_text': 't-shirt',
+        'search_text': 'maillot équipe de France 1984 taille m',
         'catalog_ids': '',
         'brand_ids' : '',
         'order': 'newest_first',
     },
-    {
-        'page': '1',
-        'per_page': '96',
-        'search_text': '',
-        'catalog_ids': '2996',
-        'brand_ids' : '',
-        'order': 'newest_first',
-    },
-
-]
