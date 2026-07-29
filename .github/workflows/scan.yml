@@ -1,0 +1,33 @@
+name: Vinted Scan
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install -r requirements.txt
+
+      - name: Run scanner
+        env:
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PSW: ${{ secrets.SMTP_PSW }}
+          SMTP_TO: ${{ secrets.SMTP_TO }}
+        run: python3 vinted_scanner.py
+
+      - name: Commit updated items list
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add vinted_items.txt
+          git diff --staged --quiet || git commit -m "update seen items"
+          git push
