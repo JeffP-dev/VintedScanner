@@ -6,7 +6,7 @@ smtp_psw = os.environ.get("SMTP_PSW")
 smtp_server = "mail.zaclys.net"
 smtp_port = 587
 smtp_toaddrs = [os.environ.get("SMTP_TO")]
-smtp_from = os.environ.get("SMTP_USERNAME"
+smtp_from = os.environ.get("SMTP_USERNAME")
 
 # Vinted URL: change the TLD according to your country (.fr, .es, etc.)
 vinted_url = "https://www.vinted.fr"
