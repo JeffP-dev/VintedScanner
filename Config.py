@@ -8,6 +8,11 @@ smtp_port = 587
 smtp_toaddrs = [os.environ.get("SMTP_TO")]
 smtp_from = os.environ.get("SMTP_USERNAME")
 
+slack_webhook_url = None
+telegram_bot_token = None
+telegram_chat_id = None
+discord_webhook_url = None
+
 # Vinted URL: change the TLD according to your country (.fr, .es, etc.)
 vinted_url = "https://www.vinted.fr"
 
