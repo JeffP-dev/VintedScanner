@@ -6,7 +6,7 @@ smtp_psw = os.environ.get("SMTP_PSW")
 smtp_server = "mail.zaclys.net"
 smtp_port = 587
 smtp_toaddrs = [os.environ.get("SMTP_TO")]
-smtp_from = os.environ.get("SMTP_USERNAME")
+smtp_from = os.environ.get("SMTP_FROM_ADDRESS")
 
 slack_webhook_url = None
 telegram_bot_token = None
