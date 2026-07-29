@@ -10,5 +10,5 @@ msg["To"] = os.environ.get("SMTP_TO")
 with smtplib.SMTP(os.environ.get("SMTP_SERVER", "mail.zaclys.net"), 587) as server:
     server.starttls()
     server.login(os.environ.get("SMTP_USERNAME"), os.environ.get("SMTP_PSW"))
-    server.sendmail(os.environ.get("SMTP_FROM_ADDRESS")
+    server.sendmail(os.environ.get("SMTP_FROM_ADDRESS"), [msg["To"]], msg.as_string())
 print("Email envoyé avec succès !")
