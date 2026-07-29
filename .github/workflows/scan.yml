@@ -24,7 +24,7 @@ jobs:
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
           SMTP_PSW: ${{ secrets.SMTP_PSW }}
           SMTP_TO: ${{ secrets.SMTP_TO }}
-      run: python3 vinted_scanner.py
+        run: python3 vinted_scanner.py
 
       - name: Commit updated items list
         run: |
