@@ -32,4 +32,12 @@ queries = [
         'brand_ids' : '',
         'order': 'newest_first',
     },
+        {
+        'page': '1',
+        'per_page': '96',
+        'search_text': 'Jean 1083 40',
+        'catalog_ids': '',
+        'brand_ids' : '',
+        'order': 'newest_first',
+    }
 ]
