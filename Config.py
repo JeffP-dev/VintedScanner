@@ -27,7 +27,7 @@ queries = [
     {
         'page': '1',
         'per_page': '96',
-        'search_text': 'maillot équipe de France 1984 taille m',
+        'search_text': 'maillot équipe de France 84 taille m',
         'catalog_ids': '',
         'brand_ids' : '',
         'order': 'newest_first',
