@@ -30,7 +30,7 @@ queries = [
         'search_text': 'maillot équipe de France',
         'catalog_ids': '30',
         'sise_ids': '208',
-        'brand_ids' : '14',
+        'brand_ids' : '14,194976',
         'order': 'newest_first',
     },
         {
