@@ -29,8 +29,9 @@ queries = [
         'per_page': '96',
         'search_text': 'maillot équipe de France',
         'catalog_ids': '30',
-        'sise_ids': '208',
-        'brand_ids' : '14,194976',
+        'size_ids': '208',
+        'brand_ids': '14,194976',
+        'status_ids': '1,2,6'
         'order': 'newest_first',
     },
         {
@@ -38,8 +39,9 @@ queries = [
         'per_page': '96',
         'search_text': '',
         'catalog_ids': '257',
-        'sise_ids': '1639',
-        'brand_ids' : '318321',
+        'size_ids': '1639',
+        'brand_ids': '318321',
+        'status_ids': '1,2,6',
         'order': 'newest_first',
     }
 ]
