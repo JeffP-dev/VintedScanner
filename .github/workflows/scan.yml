@@ -27,6 +27,10 @@ jobs:
           SMTP_TO: ${{ secrets.SMTP_TO }}
         run: python3 vinted_scanner.py
 
+      - name: Show scanner logs
+        if: always()
+        run: cat vinted_scanner.log || echo "No log file found"
+
       - name: Commit updated items list
         run: |
           git config user.name "github-actions"
