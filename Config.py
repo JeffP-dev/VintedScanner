@@ -27,7 +27,7 @@ queries = [
     {
         'page': '1',
         'per_page': '96',
-        'search_text': 'maillot équipe de France',
+        'search_text': 'maillot équipe de France 84',
         'catalog_ids': '30',
         'size_ids': '208',
         'brand_ids': '14,194976',
