@@ -25,7 +25,9 @@ jobs:
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
           SMTP_PSW: ${{ secrets.SMTP_PSW }}
           SMTP_TO: ${{ secrets.SMTP_TO }}
-        run: python3 vinted_scanner.py
+        run: |
+          python3 -c "import Config; print('SERVER:', repr(Config.smtp_server)); print('USERNAME:', repr(Config.smtp_username)); print('FROM:', repr(Config.smtp_from))"
+          python3 vinted_scanner.py
 
       - name: Show scanner logs
         if: always()
