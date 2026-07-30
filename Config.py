@@ -3,8 +3,8 @@ import os
 
 smtp_username = os.environ.get("SMTP_USERNAME")
 smtp_psw = os.environ.get("SMTP_PSW")
-smtp_server = "mail.zaclys.net"
-smtp_port = 587
+smtp_server =  os.environ.get("SMTP_HOST")
+smtp_port =  os.environ.get("SMTP_PORT")
 smtp_toaddrs = [os.environ.get("SMTP_TO")]
 smtp_from = os.environ.get("SMTP_FROM_ADDRESS")
 
