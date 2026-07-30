@@ -29,7 +29,7 @@ jobs:
 
       - name: Show scanner logs
         if: always()
-        run: cat vinted_scanner.log || echo "No log file found"
+        run: ls -la && cat vinted_scanner.log 2>&1 || echo "No log file found"
 
       - name: Commit updated items list
         run: |
