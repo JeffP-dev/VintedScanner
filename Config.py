@@ -31,7 +31,7 @@ queries = [
         'catalog_ids': '30',
         'size_ids': '208',
         'brand_ids': '14,194976',
-        'status_ids': '1,2,6'
+        'status_ids': '1,2,6',
         'order': 'newest_first',
     },
         {
