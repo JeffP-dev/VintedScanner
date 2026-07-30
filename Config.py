@@ -35,8 +35,8 @@ queries = [
         {
         'page': '1',
         'per_page': '96',
-        'search_text': 'Jean 1083 40',
-        'catalog_ids': '',
+        'search_text': 'taille 40',
+        'catalog_ids': '257',
         'brand_ids' : '318321',
         'order': 'newest_first',
     }
