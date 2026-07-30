@@ -86,7 +86,7 @@ def send_email(item_title, item_price, item_url, item_image):
         # Create the e-mail message
         msg = EmailMessage()
         msg["To"] = Config.smtp_toaddrs
-        msg["From"] = email.utils.formataddr(("Vinted Scanner", Config.smtp_username))
+        msg["From"] = email.utils.formataddr(("Vinted Scanner", Config.smtp_from))
         msg["Subject"] = "Vinted Scanner - New Item"
         msg["Date"] = email.utils.formatdate(localtime=True)
         msg["Message-ID"] = email.utils.make_msgid()
