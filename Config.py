@@ -27,6 +27,17 @@ queries = [
     {
         'page': '1',
         'per_page': '96',
+        'search_text': 'maillot gardien équipe de France',
+        'catalog_ids': '30',
+        'size_ids': '208',
+        'brand_ids': '14,194976',
+        'status_ids': '1,2,6',
+        'required_keyword': 'gardien',
+        'order': 'newest_first',
+    },
+    {
+        'page': '1',
+        'per_page': '96',
         'search_text': 'maillot équipe de France 1984',
         'catalog_ids': '30',
         'size_ids': '208',
