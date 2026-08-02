@@ -28,7 +28,7 @@ queries = [
         'page': '1',
         'per_page': '96',
         'search_text': 'maillot gardien équipe de France',
-        'catalog_ids': '30',
+        'catalog_ids': '1204',
         'size_ids': '628,629',
         'brand_ids': '53',
         'status_ids': '1,2,6',
