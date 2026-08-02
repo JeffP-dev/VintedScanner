@@ -27,7 +27,7 @@ queries = [
         {
         'page': '1',
         'per_page': '96',
-        'search_text': '',
+        'search_text': 'odaje',
         'catalog_ids': '1231',
         'size_ids': '784,785,786',
         'brand_ids': '18361610',
@@ -60,7 +60,7 @@ queries = [
         {
         'page': '1',
         'per_page': '96',
-        'search_text': '',
+        'search_text': '1083',
         'catalog_ids': '257',
         'size_ids': '1639',
         'brand_ids': '318321',
