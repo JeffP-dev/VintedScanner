@@ -28,7 +28,7 @@ queries = [
         'page': '1',
         'per_page': '96',
         'search_text': 'odaje',
-        'catalog_ids': '1231',
+        'catalog_ids': '1242',
         'size_ids': '784,785,786',
         'brand_ids': '18361610',
         'status_ids': '1,2,6',
