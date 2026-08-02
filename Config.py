@@ -24,6 +24,17 @@ vinted_url = "https://www.vinted.fr"
 # "order" you can change it to relevance, newest_first, price_high_to_low, price_low_to_high
 
 queries = [
+        {
+        'page': '1',
+        'per_page': '96',
+        'search_text': '',
+        'catalog_ids': '1231',
+        'size_ids': '784,785,786',
+        'brand_ids': '18361610',
+        'status_ids': '1,2,6',
+        'required_keywords': ['pablo'],
+        'order': 'newest_first',
+    },
     {
         'page': '1',
         'per_page': '96',
