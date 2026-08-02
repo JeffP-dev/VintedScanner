@@ -32,8 +32,7 @@ queries = [
         'size_ids': '628,629',
         'brand_ids': '53',
         'status_ids': '1,2,6',
-        'required_keyword': 'gardien',
-        'required_keyword': 'France',
+        'required_keywords': ['gardien', 'France'],
         'order': 'newest_first',
     },
     {
@@ -44,7 +43,7 @@ queries = [
         'size_ids': '208',
         'brand_ids': '14,194976',
         'status_ids': '1,2,6',
-        'required_keyword': '1984',
+        'required_keywords': ['1984'],
         'order': 'newest_first',
     },
         {
