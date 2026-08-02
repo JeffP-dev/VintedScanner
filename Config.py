@@ -32,7 +32,7 @@ queries = [
         'size_ids': '784,785,786',
         'brand_ids': '18361610',
         'status_ids': '1,2,6',
-        'required_keywords': ['pablo'],
+        'required_keywords': [''],
         'order': 'newest_first',
     },
     {
