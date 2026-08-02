@@ -33,6 +33,7 @@ queries = [
         'brand_ids': '53',
         'status_ids': '1,2,6',
         'required_keyword': 'gardien',
+        'required_keyword': 'France',
         'order': 'newest_first',
     },
     {
