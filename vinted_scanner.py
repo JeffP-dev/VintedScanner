@@ -260,9 +260,9 @@ def main(dry_run=False):
 
             item_id = item.get("id")
             item_title = item.get("title")
-            required_keyword = params.get('required_keyword')
-            if required_keyword and required_keyword.lower() not in item_title.lower():
-               continue
+            required_keywords = params.get('required_keywords', [])
+            if required_keywords and not all(kw.lower() in item_title.lower() for kw in required_keywords):
+                continue
             item_url = item.get("url")
             if item_id is None or not item_title or not item_url:
                 logging.warning(
