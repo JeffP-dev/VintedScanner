@@ -65,7 +65,7 @@ queries = [
         'size_ids': '784,785,786',
         'brand_ids': '304297',
         'status_ids': '1,2,6',
-        'required_keywords': ['karhu'],
+        'required_keywords': ['mestari'],
         'order': 'newest_first',
     }
 ]
